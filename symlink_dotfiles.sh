@@ -6,6 +6,7 @@ Xdefaults
 vimrc
 zshrc
 dir_colors
+gitconfig
 "
 
 for dotfile in $dotfiles; do
