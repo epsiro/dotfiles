@@ -4,9 +4,6 @@ set encoding=utf8
 
 filetype indent plugin on
 
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-
 set autoindent
 set autowrite
 set background=dark
