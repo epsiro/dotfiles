@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Set background color
 xsetroot -solid black
 
