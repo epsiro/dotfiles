@@ -1,0 +1,14 @@
+# Add user to sudo group
+su
+adduser bendikss sudo
+exit
+** log out and in again **
+
+# Install git
+sudo apt-get install git
+
+# Clone dotfiles repository
+git clone https://github.com/epsiro/dotfiles
+
+# Run debian_customize script
+./dotfiles/debian_customize.sh
