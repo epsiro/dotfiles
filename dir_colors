@@ -1,0 +1,56 @@
+# General
+NORMAL   0
+FILE     0
+DIR      34;01
+LINK     32
+ORPHAN   36
+MISSING  36
+FIFO     31
+SOCK     33;01
+BLK      44;37
+CHR      44;37
+EXEC     32;01
+
+# Archives
+*.tar.gz  35
+*.tar.bz2 35
+*.zip     35
+
+# Movies and music
+*.divx   33
+*.mov    33
+*.avi    33
+*.mpg    33
+*.mpeg   33
+*.mp3    33
+*.wav    33
+*.wmv    33
+*.mkv    33
+
+*.srt    36
+*.sub    36
+
+# Pictures
+*.png    32
+*.gif    32
+*.jpg    32
+*.jpeg   32
+*.bmp    32
+*.tif    32
+
+# Documents
+*.pdf    33
+*.tex    33
+*.html   33
+*.htm    33
+
+# Source code
+*.java   31
+*.jar    31
+*.cpp    31
+*.c      31
+*.py     31
+*.s      31
+*.awk    31
+*.pl     31
+*.php    31
