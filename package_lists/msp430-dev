@@ -1,0 +1,6 @@
+gcc-msp430
+mspdebug
+gdb-msp430
+msp430-libc
+msp430mcu
+binutils-msp430

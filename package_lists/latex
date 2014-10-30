@@ -1,0 +1,4 @@
+texlive
+texlive-latex-extra
+texlive-fonts-extra
+latexmk
