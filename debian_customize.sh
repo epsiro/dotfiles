@@ -5,6 +5,15 @@
 
 rmdir Desktop Documents Downloads Music Pictures Public Templates Videos
 
+echo "Compiling and installing dwm"
+sudo apt-get install libx11-dev libxinerama-dev
+cd /tmp
+wget sovegjarto.com/dwm/dwm-6.0.tar.gz
+tar xf dwm-6.0.tar.gz
+cd dwm-6.0
+make
+sudo make install
+
 echo "Installing core packages"
 sudo apt-get update
 sudo apt-get install $(cat ~/dotfiles/package_lists/core)
