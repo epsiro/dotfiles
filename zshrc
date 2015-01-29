@@ -457,7 +457,6 @@ alias s='screen -X screen'
 alias scanip='nmap -sP $(nm-tool | grep " Address" | cut -d " " -f14-34 | cut -d "." -f1-3).0/24'
 alias solve='zsh -c '\''echo "scale=4;$0 $@" | bc -l '\'''
 alias sp='cat ~/Dropbox/uio/study_plan'
-alias su="sudo su"
 alias sz="du -skL * 2> /dev/null | sort -nr | cut -f2 | xargs -d '\n' du -shL 2> /dev/null | head"
 alias tp='cat ~/Dropbox/uio/2011s/schedule'
 alias tpm='cat ~/Dropbox/B+M/tpm'
