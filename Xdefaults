@@ -6,8 +6,8 @@ URxvt.underlineColor:   white
 URxvt*saveLines:          65535
 URxvt*termName:           xterm-256color
 URxvt.fading:           50
-URxvt*faceName: BitStream Vera Sans Mono
-URxvt*faceSize: 12
+URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
 URxvt*scrollBar: False
 URxvt*borderLess: False
 URxvt.perl-ext-common: default,matcher
