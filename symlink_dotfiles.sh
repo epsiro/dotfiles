@@ -18,3 +18,6 @@ for dotfile in $dotfiles; do
     ln -s dotfiles/$dotfile ~/.$dotfile
     echo .$dotfile symlinked
 done
+
+mkdir ~/.pcb
+ln -s dotfiles/pcb_settings ~/.pcb/settings

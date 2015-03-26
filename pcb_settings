@@ -1,0 +1,3 @@
+lib-newlib = ~/lda/gedalib/footprints:footprints
+route-styles = Skinny signal,8.00mil,27.00mil,13.00mil,6.00mil:Medium signal,12.00mil,36.00mil,16.00mil,10.00mil:Fat signal,16.00mil,50.00mil,25.00mil,10.00mil:Medium power,40.0mil,80.0mil,40.0mil,10.0mil:Skinny power,25.00mil,80.00mil,40.00mil,10.00mil
+lib-contents-command = /bin/true
