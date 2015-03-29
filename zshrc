@@ -260,9 +260,9 @@ $(echo -n $@ | openssl base64)/plaintext";
 }
 
 tl() {
-    wget -qO- "http://ajax.googleapis.com/ajax/services/\
-language/translate?v=1.0&q=$1&langpair=$2|${3:-en}" | \
-    sed 's/.*"translatedText":"\([^"]*\)".*}/\1\n/';
+    lang="en";
+    text=$*;
+    wget -U "Mozilla/5.0" -qO - "http://translate.google.com/translate_a/t?client=t&text=$text&sl=auto&tl=$lang" | sed 's/\[\[\[\"//' | cut -d \" -f 1
 }
 
 define() {
