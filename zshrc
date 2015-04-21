@@ -371,6 +371,10 @@ readfuse() { od -d $1 | head -n1 | sed -e 's/0000000 *//' | xargs -i perl -e '$s
 
 datefuture() { python -c 'import datetime as dt; import sys; print dt.date.today() + dt.timedelta(days=int(sys.argv[1]))' $1 }
 
+parse_nmea() {
+        awk '/\$GPRMC/{if (x)print x;x="";}{x=(!x)?$0:x","$0;}END{print x;}' $1 |  awk -F, '/\$GPRMC/ {if($3 == "A") {print $10$2, $4, $6, $31, $32; fflush();}}'
+}
+
 # From mastensg
 i() {
     (which apt-get >/dev/null 2>&1 && sudo apt-get install $*) ||
